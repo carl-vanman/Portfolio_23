@@ -1,3 +1,4 @@
+import Navigation from "@/components/navigation/Navigation";
 import Head from "next/head";
 
 //import { Inter } from '@next/font/google'
@@ -17,7 +18,9 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main></main>
+            <main>
+                <Navigation />
+            </main>
         </>
     );
 }
