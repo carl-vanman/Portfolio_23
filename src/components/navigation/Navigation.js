@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import styles from "./Navigation.module.css"
 import Image from 'next/image'
+
+import styles from "./Navigation.module.css"
+import utils from "../../styles/utils.module.css"
 
 import githubLight from "../../../public/images/icons/githubLight.png"
 import githubDark from "../../../public/images/icons/githubDark.png"
@@ -14,9 +16,11 @@ const Navigation = () => {
 
     const handleOpenClose = () => setIsMenuOpen(prev => prev = !prev)
 
+    const closeMenu = () => setIsMenuOpen(false)
+
     const closeMenuToLeft = () => setBtnBtnPositionRight(false)
     const closeMenuToRight = () => setBtnBtnPositionRight(true)
-
+    
   return (
     <nav className={styles.nav}>
         { !isBtnPositionRight || isMenuOpen ?
@@ -32,23 +36,23 @@ const Navigation = () => {
             </button> : <></>
         }
         <ul className={`${styles.menu_links} ${isBtnPositionRight ? styles.right : styles.left} ${isMenuOpen ? styles.open : styles.close}`}>
-            <li className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
-                <a className={`${styles.menu_link}`}>
+            <li onClick={() => closeMenu()} className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
+                <a href='#' className={`${styles.menu_link} ${utils.link_text_light}`}>
                     Home
                 </a>
             </li>
-            <li className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
-                <a className={`${styles.menu_link}`}>
+            <li onClick={() => closeMenu()} className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
+                <a href='#' className={`${styles.menu_link} ${utils.link_text_light}`}>
                     Projects
                 </a>
             </li>
-            <li className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
-                <a className={`${styles.menu_link}`}>
+            <li onClick={() => closeMenu()} className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
+                <a href='#' className={`${styles.menu_link} ${utils.link_text_light}`}>
                     Experience
                 </a>
             </li>
-            <li className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
-                <a className={`${styles.menu_link}`}>
+            <li onClick={() => closeMenu()} className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
+                <a href='#' className={`${styles.menu_link} ${utils.link_text_light}`}>
                     Contact
                 </a>
             </li>
@@ -56,7 +60,7 @@ const Navigation = () => {
                 <div className={styles.menu_link_divider} />
             </li>
             <li className={`${styles.menu_link_container} ${styles.socials} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
-                <a>
+                <a href='#' onClick={() => closeMenu()}>
                     <div className={styles.social}>
                         <Image
                             className={styles.social_image}
@@ -67,7 +71,7 @@ const Navigation = () => {
                         />
                     </div>
                 </a>
-                <a>
+                <a href='#' onClick={() => closeMenu()}>
                     <div className={styles.social}>
                         <Image
                             className={styles.social_image}

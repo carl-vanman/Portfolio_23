@@ -29,7 +29,7 @@
     --md-font-size: 24px;
     --sm-font-size: 16px;
     --body-font-size: 12px;
-    --link-font-size: clamp(12px, 2vw, 24px);
+    --link-font-size: 24px;
     --link-size: 12px;
     
     /* ----------------------SPACING------------------------- */
