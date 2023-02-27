@@ -26,16 +26,16 @@
 .menu_btn.right {
     transform: rotate(180deg);
     right: 0px;
-    opacity: 1;
-    animation: menuBtn 1.5s ease-in;
-    /* 0.5s */
 }
 
 .menu_btn.left {
     left: 0px;
+}
+
+.menu_btn.right,
+.menu_btn.left {
     opacity: 1;
     animation: menuBtn 1.5s ease-in;
-    /* 0.5s */
 }
 
 @keyframes menuBtn {
