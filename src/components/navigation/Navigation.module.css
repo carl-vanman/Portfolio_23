@@ -27,13 +27,15 @@
     transform: rotate(180deg);
     right: 0px;
     opacity: 1;
-    animation: menuBtn 0.5s ease-in;
+    animation: menuBtn 2s ease-in;
+    /* 0.5s */
 }
 
 .menu_btn.left {
     left: 0px;
     opacity: 1;
-    animation: menuBtn 0.5s ease-in;
+    animation: menuBtn 2s ease-in;
+    /* 0.5s */
 }
 
 @keyframes menuBtn {

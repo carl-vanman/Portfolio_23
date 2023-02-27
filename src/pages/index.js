@@ -1,10 +1,20 @@
 import Navigation from "@/components/navigation/Navigation";
 import Head from "next/head";
 
-//import { Inter } from '@next/font/google'
-//import styles from '@/styles/Home.module.css'
+import { Be_Vietnam_Pro } from "@next/font/google";
+import { Noto_Sans } from "@next/font/google";
 
-//const inter = Inter({ subsets: ['latin'] })
+const vietnam = Be_Vietnam_Pro({
+    variable: "--primary-font",
+    weight: ["400"],
+    subsets:["latin"],
+});
+
+const noto = Noto_Sans({
+    variable: "--secondary-font",
+    weight: ["700"],
+    subsets:["latin"],
+});
 
 export default function Home() {
     return (
@@ -18,7 +28,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
+            <main className={`${vietnam.variable} ${noto.variable}`}>
                 <Navigation />
             </main>
         </>

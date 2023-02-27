@@ -1,8 +1,8 @@
 :root {
-    /* constraints */
+    /* ---------------------CONSTRAINTS------------------------ */
     --max-width: 1100px;
 
-    /* Colors */
+    /* -----------------------COLORS--------------------------- */
     --primary-color:rgb(40 39 41);
     --primary-color-rgb: 40 39 41;
 
@@ -14,7 +14,25 @@
     
     --accent-color: rgb(86 83 210);
 
-    /* spacing */
+    /* -----------------------FONTS--------------------------- */
+    
+    /* Defined in index.js imported with new@next/font */
+    /*
+    --primary-font: Be Vietnam Pro;
+    --secondary-font: Noto Sans; 
+    */
+    
+    --primary-font-weight: 400;
+    --secondary-font-weight:  700;
+    --xl-font-size: 148px;
+    --lg-font-size: 64px;
+    --md-font-size: 24px;
+    --sm-font-size: 16px;
+    --body-font-size: 12px;
+    --link-font-size: clamp(12px, 2vw, 24px);
+    --link-size: 12px;
+    
+    /* ----------------------SPACING------------------------- */
     --xxl-spacer: 8rem;     /* 128px */
     --xl-spacer: 4rem;      /* 64px */
     --lg-spacer: 1.5rem;    /* 24px */
@@ -22,6 +40,7 @@
     --sm-spacer: 0.5rem;    /* 8px */
     --xsm-spacer: 0.25rem;  /* 4px */
 }
+
 
 * {
     box-sizing: border-box;
