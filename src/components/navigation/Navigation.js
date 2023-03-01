@@ -35,7 +35,7 @@ const Navigation = () => {
                 <div className={`${isMenuOpen ? styles.close_state : styles.open_state}`} />
             </button> : <></>
         }
-        <ul className={`${styles.menu_links} ${isBtnPositionRight ? styles.right : styles.left} ${isMenuOpen ? styles.open : styles.close}`}>
+        <ul id={styles.menu_links} className={`${styles.menu_links} ${isBtnPositionRight ? styles.right : styles.left} ${isMenuOpen ? styles.open : styles.close}`}>
             <li onClick={() => closeMenu()} className={`${styles.menu_link_container} ${isMenuOpen ? styles.open_state : styles.close_state}`}>
                 <a href='#' className={`${styles.menu_link} ${utils.link_text_light}`}>
                     Home

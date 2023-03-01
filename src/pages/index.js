@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation/Navigation";
 import Head from "next/head";
+import styles from "../styles/Home.module.css"
 
 import { Be_Vietnam_Pro } from "@next/font/google";
 import { Noto_Sans } from "@next/font/google";
@@ -28,7 +29,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${vietnam.variable} ${noto.variable}`}>
+            <main className={`${styles.main_layout} ${vietnam.variable} ${noto.variable}`}>
                 <Navigation />
             </main>
         </>

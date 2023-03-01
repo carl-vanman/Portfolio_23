@@ -1,0 +1,9 @@
+.main_layout {
+    padding: 0vw 2vw;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 699px) 1fr;
+}
+
+.main_layout > * {
+    grid-column: 2 / -2;
+}
