@@ -1,5 +1,90 @@
 /* -----------------------TOPOGRAPHY--------------------------- */
-.body_text_dark,
+
+.body_text,
+.link_text,
+.body_text_light,
+.link_text_light,
+.tag_text {
+    font-family: var(--primary-font);
+    font-weight: var(--primary-font-weight);
+    letter-spacing: 0.04em;
+}
+
+.body_text,
+.body_text_light {
+    font-size: var(--body-font-size);
+    line-height: 1.5em;
+}
+
+.link_text,
+.link_text_light {
+    font-size: var(--link-font-size);
+}
+
+.tag_text {
+    font-size: var(--tag-font-size);
+}
+
+.xl_heading,
+.lg_heading,
+.md_heading,
+.sm_heading,
+.xl_heading_light,
+.lg_heading_light,
+.md_heading_light,
+.sm_heading_light {
+    font-family: var(--secondary-font);
+    font-weight: var(--secondary-weight);
+    letter-spacing: 0.04em;
+}
+
+.xl_heading,
+.xl_heading_light {
+    font-size: var(--xl-font-size);
+    line-height: 70%;
+    letter-spacing: -0.05em;
+}
+
+.lg_heading,
+.lg_heading_light {
+    font-size: var(--lg-font-size);
+}
+
+.md_heading,
+.md_heading_light {
+    font-size: var(--md-font-size);
+}
+
+.sm_heading,
+.sm_heading_light {
+    font-size: var(--sm-font-size);
+}
+
+.body_text,
+.xl_heading,
+.lg_heading,
+.md_heading,
+.sm_heading,
+.link_text {
+    color: var(--secondary-color);
+}
+
+/* transperant */
+.body_text_light,
+.link_text_light,
+.xl_heading_light,
+.lg_heading_light,
+.md_heading_light,
+.sm_heading_light {
+    color: var(--secondary-color-light);
+}
+
+.tag_text {
+    color: var(--accent-color);
+}
+
+/*  */
+/* .body_text_dark,
 .body_text_light,
 .link_text_dark,
 .link_text_light {
@@ -64,4 +149,4 @@
 .sm_heading_light,
 .link_text_light {
     color: var(--secondary-color);
-}
+} */

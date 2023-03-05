@@ -1,13 +1,17 @@
-import Navigation from "@/components/navigation/Navigation";
-import Head from "next/head";
-import styles from "../styles/Home.module.css"
+import React from 'react'
 
 import { Be_Vietnam_Pro } from "@next/font/google";
 import { Noto_Sans } from "@next/font/google";
 
+import Head from "next/head";
+import Navigation from "@/components/navigation/Navigation";
+import Introduction from "@/components/introduction/Introduction";
+
+import styles from "../styles/Home.module.css"
+
 const vietnam = Be_Vietnam_Pro({
     variable: "--primary-font",
-    weight: ["400"],
+    weight: ["300"],
     subsets:["latin"],
 });
 
@@ -31,6 +35,7 @@ export default function Home() {
             </Head>
             <main className={`${styles.main_layout} ${vietnam.variable} ${noto.variable}`}>
                 <Navigation />
+                <Introduction />
             </main>
         </>
     );

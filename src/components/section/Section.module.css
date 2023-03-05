@@ -1,0 +1,6 @@
+.container {
+    padding: var(--xxl-spacer) 0rem;
+}
+.container {
+    padding: clamp(var(--lg-spacer), 20vw, var(--xxl-spacer)) 0rem;
+}

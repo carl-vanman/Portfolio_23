@@ -35,7 +35,7 @@ const NavigationLinks = ({ isMenuOpen, position, closeMenu }) => {
                 >
                     <a
                         href={link.href}
-                        className={`${styles.menu_link} ${utils.link_text_light}`}
+                        className={`${styles.menu_link} ${utils.link_text}`}
                     >
                         {link.label}
                     </a>

@@ -25,13 +25,14 @@
     
     --primary-font-weight: 400;
     --secondary-font-weight:  700;
-    --xl-font-size: 148px;
+    --xl-font-size: clamp(96px, 20vw, 148px);
     --lg-font-size: 64px;
     --md-font-size: 24px;
     --sm-font-size: 16px;
     --body-font-size: 12px;
     --link-font-size: 24px;
     --desktop-link-size: 12px;
+    --tag-font-size: 12px;
     
     /* ----------------------SPACING------------------------- */
     --xxl-spacer: 8rem;     /* 128px */
