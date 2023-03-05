@@ -1,6 +1,6 @@
 .nav {
     --margin-bottom: 5vh;
-    --btn-size: 64px;
+    --btn-size: 54px;
 }
 
 /* ---------------------MENU BUTTON------------------------ */
@@ -376,7 +376,7 @@
     }
 
     #menu_links:hover .menu_link {
-        color: var(--secondary-color-light);
+        color: var(--accent-color);
         transition: color 0.3s ease-out;
     }
     

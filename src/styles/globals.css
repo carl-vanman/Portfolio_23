@@ -12,8 +12,8 @@
     --primary-color-light:  rgb(var(--primary-color-rgb) / 0.65);
     --secondary-color-light: rgb(var(--secondary-color-rgb) / 0.65);
     
-    --accent-color: rgb(225 93 64);
     --accent-color: rgb(86 83 210);
+    --accent-color: rgb(225 93 64);
 
     /* -----------------------FONTS--------------------------- */
     
@@ -23,12 +23,17 @@
     --secondary-font: Noto Sans; 
     */
     
-    --primary-font-weight: 400;
+    --primary-font-weight: 300;
     --secondary-font-weight:  700;
+    --exception-font-weight:  400;
+
+    --primary-letter-spacing: 0.04em;
+    --exception-letter-spacing: -0.04em;
+
     --xl-font-size: clamp(96px, 20vw, 148px);
     --lg-font-size: 64px;
     --md-font-size: 24px;
-    --sm-font-size: 16px;
+    --sm-font-size: 18px;
     --body-font-size: 12px;
     --link-font-size: 24px;
     --desktop-link-size: 12px;
@@ -42,7 +47,6 @@
     --sm-spacer: 0.5rem;    /* 8px */
     --xsm-spacer: 0.25rem;  /* 4px */
 }
-
 
 * {
     box-sizing: border-box;

@@ -7,7 +7,7 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [buttonPosition, setButtonPosition] = useState("right");
+    const [buttonPosition, setButtonPosition] = useState("left");
 
     const toggleMenu = (clickedButtonPosition) => {
         if (buttonPosition !== clickedButtonPosition) {

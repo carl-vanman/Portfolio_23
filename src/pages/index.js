@@ -18,7 +18,7 @@ const vietnam = Be_Vietnam_Pro({
 
 const noto = Noto_Sans({
     variable: "--secondary-font",
-    weight: ["700"],
+    weight: ["500", "700"],
     subsets:["latin"],
 });
 

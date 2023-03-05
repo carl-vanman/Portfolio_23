@@ -34,15 +34,32 @@
 .md_heading_light,
 .sm_heading_light {
     font-family: var(--secondary-font);
-    font-weight: var(--secondary-weight);
-    letter-spacing: 0.04em;
+    letter-spacing: var(--primary-letter-spacing);
+}
+
+.xl_heading,
+.lg_heading,
+.md_heading,
+.xl_heading_light,
+.lg_heading_light,
+.md_heading_light {
+    font-weight: var(--secondary-font-weight);
+}
+
+.lg_heading,
+.md_heading,
+.sm_heading,
+.lg_heading_light,
+.md_heading_light,
+.sm_heading_light {
+    letter-spacing: var(--primary-letter-spacing);
 }
 
 .xl_heading,
 .xl_heading_light {
     font-size: var(--xl-font-size);
     line-height: 70%;
-    letter-spacing: -0.05em;
+    letter-spacing: var(--exception-letter-spacing);
 }
 
 .lg_heading,
@@ -58,6 +75,7 @@
 .sm_heading,
 .sm_heading_light {
     font-size: var(--sm-font-size);
+    font-weight: var(--exception-font-weight);
 }
 
 .body_text,
