@@ -8,6 +8,7 @@ import Navigation from "@/components/navigation/Navigation";
 import Introduction from "@/components/introduction/Introduction";
 
 import styles from "../styles/Home.module.css"
+import Sliced from '@/components/art/Sliced';
 
 const vietnam = Be_Vietnam_Pro({
     variable: "--primary-font",
@@ -36,6 +37,7 @@ export default function Home() {
             <main className={`${styles.main_layout} ${vietnam.variable} ${noto.variable}`}>
                 <Navigation />
                 <Introduction />
+                <Sliced />
             </main>
         </>
     );

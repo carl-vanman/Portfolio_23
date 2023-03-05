@@ -1,0 +1,9 @@
+.art_container {
+    position: relative;
+    width: 100%;
+    height: 263px;
+}
+
+.art_image {
+    object-fit: contain;
+}
