@@ -46,6 +46,8 @@
     --md-spacer: 1rem;      /* 16px */
     --sm-spacer: 0.5rem;    /* 8px */
     --xsm-spacer: 0.25rem;  /* 4px */
+
+    --lg-border-radius: 18px;
 }
 
 * {

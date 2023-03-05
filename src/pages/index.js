@@ -9,6 +9,7 @@ import Introduction from "@/components/introduction/Introduction";
 
 import styles from "../styles/Home.module.css"
 import Sliced from '@/components/art/Sliced';
+import Projects from '@/components/projects/Projects';
 
 const vietnam = Be_Vietnam_Pro({
     variable: "--primary-font",
@@ -38,6 +39,7 @@ export default function Home() {
                 <Navigation />
                 <Introduction />
                 <Sliced />
+                <Projects />
             </main>
         </>
     );
