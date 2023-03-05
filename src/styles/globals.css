@@ -3,16 +3,16 @@
     --max-width: 1100px;
 
     /* -----------------------COLORS--------------------------- */
-    --primary-color:rgb(40 39 41);
     --primary-color-rgb: 40 39 41;
+    --primary-color:rgb(var(--primary-color-rgb));
 
-    --secondary-color: rgb(250 250 250);
     --secondary-color-rgb: 250 250 250;
+    --secondary-color: rgb(var(--secondary-color-rgb));
     
     --primary-color-light:  rgb(var(--primary-color-rgb) / 0.65);
     --secondary-color-light: rgb(var(--secondary-color-rgb) / 0.65);
     
-    --accent-color: #E15D40;
+    --accent-color: rgb(225 93 64);
     --accent-color: rgb(86 83 210);
 
     /* -----------------------FONTS--------------------------- */

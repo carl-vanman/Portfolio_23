@@ -8,87 +8,62 @@ import utils from "../../styles/utils.module.css";
 import githubLight from "../../../public/images/icons/githubLight.png";
 import linkedinLight from "../../../public/images/icons/linkedinLight.png";
 
-const NavigationLinks = ({isMenuOpen, position, closeMenu}) => {
+const links = [
+    { label: "Home", href: "#" },
+    { label: "Projects", href: "#" },
+    { label: "Experience", href: "#" },
+    { label: "Contact", href: "#" },
+];
+const socialLinks = [
+    { altText: "Linkedin", href: "#", icon: linkedinLight },
+    { altText: "Github", href: "#", icon: githubLight },
+];
 
-    const menuState = isMenuOpen ? "open" : "close"
+const NavigationLinks = ({ isMenuOpen, position, closeMenu }) => {
+    const menuState = isMenuOpen ? "open" : "close";
 
     return (
         <ul
-            id={styles.menu_links}
+            id={styles["menu_links"]}
             className={`${styles.menu_links} ${styles[position]} ${styles[menuState]}`}
         >
-            <li
-                onClick={closeMenu}
-                className={`${styles.menu_link_container} ${styles[menuState]}`}
-            >
-                <a
-                    href="#"
-                    className={`${styles.menu_link} ${utils.link_text_light}`}
+            {links.map((link) => (
+                <li
+                    key={link.label}
+                    onClick={closeMenu}
+                    className={`${styles.menu_link_container} ${styles[menuState]}`}
                 >
-                    Home
-                </a>
-            </li>
-            <li
-                onClick={closeMenu}
-                className={`${styles.menu_link_container} ${styles[menuState]}`}
-            >
-                <a
-                    href="#"
-                    className={`${styles.menu_link} ${utils.link_text_light}`}
-                >
-                    Projects
-                </a>
-            </li>
-            <li
-                onClick={closeMenu}
-                className={`${styles.menu_link_container} ${styles[menuState]}`}
-            >
-                <a
-                    href="#"
-                    className={`${styles.menu_link} ${utils.link_text_light}`}
-                >
-                    Experience
-                </a>
-            </li>
-            <li
-                onClick={closeMenu}
-                className={`${styles.menu_link_container} ${styles[menuState]}`}
-            >
-                <a
-                    href="#"
-                    className={`${styles.menu_link} ${utils.link_text_light}`}
-                >
-                    Contact
-                </a>
-            </li>
+                    <a
+                        href={link.href}
+                        className={`${styles.menu_link} ${utils.link_text_light}`}
+                    >
+                        {link.label}
+                    </a>
+                </li>
+            ))}
             <li className={`${styles.menu_link_container}`}>
                 <div className={styles.menu_link_divider} />
             </li>
             <li
                 className={`${styles.menu_link_container} ${styles.socials} ${styles[menuState]}`}
             >
-                <a href="#" onClick={closeMenu}>
-                    <div className={styles.social}>
-                        <Image
-                            className={styles.social_image}
-                            alt="Github"
-                            src={linkedinLight}
-                            fill
-                            sizes="100%"
-                        />
-                    </div>
-                </a>
-                <a href="#" onClick={closeMenu}>
-                    <div className={styles.social}>
-                        <Image
-                            className={styles.social_image}
-                            alt="Github"
-                            src={githubLight}
-                            fill
-                            sizes="100%"
-                        />
-                    </div>
-                </a>
+                {socialLinks.map((social) => (
+                    <a
+                        key={social.altText}
+                        href={social.href}
+                        onClick={closeMenu}
+                    >
+                        <div className={styles.social}>
+                            <Image
+                                className={styles.social_image}
+                                alt={social.altText}
+                                src={social.icon}
+                                fill
+                                sizes="100%"
+                            />
+                        </div>
+                    </a>
+                ))}
             </li>
         </ul>
     );

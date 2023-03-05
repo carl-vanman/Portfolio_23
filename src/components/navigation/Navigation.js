@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import styles from "./Navigation.module.css";
-
 import MenuButton from "./MenuButton";
 import NavigationLinks from "./NavigationLinks";
+
+import styles from "./Navigation.module.css";
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
