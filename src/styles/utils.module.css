@@ -13,7 +13,7 @@
 .body_text,
 .body_text_light {
     font-size: var(--body-font-size);
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 
 .link_text,
@@ -76,6 +76,7 @@
 .sm_heading_light {
     font-size: var(--sm-font-size);
     font-weight: var(--exception-font-weight);
+    text-transform: uppercase;
 }
 
 .body_text,

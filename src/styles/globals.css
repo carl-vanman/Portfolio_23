@@ -32,11 +32,16 @@
 
     --xl-font-size: clamp(96px, 20vw, 148px);
     --lg-font-size: 64px;
-    --md-font-size: 24px;
+    /* --md-font-size: 24px; */
+    --md-font-size: 40px;
+/*     --sm-font-size: 18px; */
     --sm-font-size: 18px;
-    --body-font-size: 12px;
+/*     --body-font-size: 12px; */
+    --body-font-size: 14px;
     --link-font-size: 24px;
-    --desktop-link-size: 12px;
+/*     --desktop-link-size: 12px; */
+    --desktop-link-size: 14px;
+    /* --tag-font-size: 12px; */
     --tag-font-size: 12px;
     
     /* ----------------------SPACING------------------------- */

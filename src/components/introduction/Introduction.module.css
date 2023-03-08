@@ -8,7 +8,7 @@
 
 .about_container {
     align-self: center;
-    width: clamp(220px, 40vw, 320px);
+    width: clamp(280px, 40vw, 360px);
 
     display: flex;
     flex-direction: column;

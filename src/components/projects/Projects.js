@@ -9,9 +9,6 @@ const Projects = () => {
         <Section>
             <div className={styles.wrapper}>
                 <h2 className={`${utils.lg_heading}`}>Projects</h2>
-                <h3 className={`${utils.md_heading} ${styles.sub_heading}`}>
-                    A Selection
-                </h3>
                 <div className={styles.projects}>
                     <article className={`${styles.project}`}>
                         <h2 className={`${utils.md_heading} ${styles.project_title}`}>Project Title</h2>
