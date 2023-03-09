@@ -4,6 +4,9 @@ import Section from "../section/Section";
 import styles from "./Projects.module.css";
 import utils from "../../styles/utils.module.css";
 
+//import Image from "next/image";
+//import newWindowLight from "../../../public/images/icons/newWindowLight.png";
+
 const Projects = () => {
     return (
         <Section>
@@ -11,32 +14,54 @@ const Projects = () => {
                 <h2 className={`${utils.lg_heading}`}>Projects</h2>
                 <div className={styles.projects}>
                     <article className={`${styles.project}`}>
-                        <h2 className={`${utils.md_heading} ${styles.project_title}`}>Project Title</h2>
-                        <h3 className={`${utils.sm_heading} ${styles.sub_heading}`}>About</h3>
+                        {/* <ul className={styles.links}>
+                            <li>
+                                <div className={styles.link}>
+                                    <Image
+                                        className={styles.link_icon}
+                                        alt="Open in new window"
+                                        src={newWindowLight}
+                                        fill
+                                        sizes="100%"
+                                    />
+                                </div>
+                            </li>
+                        </ul> */}
+                        <h2
+                            className={`${utils.md_heading} ${styles.project_title}`}
+                        >
+                            garrison.se
+                        </h2>
+                        <h3
+                            className={`${utils.sm_heading} ${styles.sub_heading}`}
+                        >
+                            About
+                        </h3>
                         <div className={styles.project_description_container}>
-                            <p className={`${utils.body_text} ${styles.project_description}`}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Sed nec lorem eu ante dignissim porta vel sed
-                                turpis. Proin interdum dolor eu felis volutpat, eget
-                                pharetra ipsum aliquam.<br/>
-                                Mauris eu metus in mauris dignissim sodales. Fusce vel elit a velit tincidunt
-                                dictum. Sed quis massa eu nibh ullamcorper bibendum.
+                            <p
+                                className={`${utils.body_text} ${styles.project_description}`}
+                            >
+                                Garrison.se is a website developed by a small
+                                team, including yourself. The website was build
+                                using Next.js, Contentful, and automatic
+                                deployments to Azure via Github Actions. The
+                                project showcases the team's expertise and
+                                efficient use of modern technologies.
                             </p>
                         </div>
                         <div className={styles.divider} />
-                        <h3 className={`${utils.sm_heading} ${styles.sub_heading}`}>
+                        <h3
+                            className={`${utils.sm_heading} ${styles.sub_heading}`}
+                        >
                             Stack
                         </h3>
-                        <div className={styles.project_stack}>
-                            <div className={styles.stack_item} />
-                            <div className={styles.stack_item} />
-                            <div className={styles.stack_item} />
-                            <div className={styles.stack_item} />
-                            <div className={styles.stack_item} />
-                            <div className={styles.stack_item} />
-                        </div>
+                        <ul className={styles.project_stack}>
+                            <li className={styles.stack_item} />
+                            <li className={styles.stack_item} />
+                            <li className={styles.stack_item} />
+                            <li className={styles.stack_item} />
+                        </ul>
                     </article>
-                    
                 </div>
             </div>
         </Section>
