@@ -23,21 +23,36 @@ const Introduction = () => {
     return (
         <Section>
             <div className={styles.container}>
-                <h2 className={`${utils.xl_heading} ${styles.top_title}`} style={{ transform: `translateX(-${scrollPosition*0.1}px)`, opacity:`${1-scrollPosition*0.0015}`}}>
+                <h2
+                    className={`${utils.xl_heading} ${styles.top_title}`}
+                    style={{
+                        transform: `translateX(-${scrollPosition * 0.1}px)`,
+                        opacity: `${1 - scrollPosition * 0.0015}`,
+                    }}
+                >
                     Carl
                 </h2>
                 <article className={`${styles.about_container}`}>
-                    <h3 className={`${utils.sm_heading_light}`}>
-                        Front-end Developer
+                    <h3 className={`${utils.md_heading}`}>
+                        Developer
                     </h3>
+                    <h4 className={`${utils.sm_heading_light}`}>
+                        About
+                    </h4>
                     <p className={`${utils.body_text}`}>
                         I am a humble and kind person with a passion for
                         creativity and technology who loves blending my
-                        technical expertise and creative skills into my work.
+                        technical expertise and creative skills into my work as a Front-End Dev.
                     </p>
-                    <aside className={`${utils.tag_text}`}>{`[ About ]`}</aside>
+                    <aside className={`${utils.tag_text}`}>{`[ Introduction ]`}</aside>
                 </article>
-                <div className={`${styles.bottom_title}`} style={{ transform: `translateX(${scrollPosition*0.1}px)`, opacity:`${1-scrollPosition*0.0015}`}}>
+                <div
+                    className={`${styles.bottom_title}`}
+                    style={{
+                        transform: `translateX(${scrollPosition * 0.1}px)`,
+                        opacity: `${1 - scrollPosition * 0.0015}`,
+                    }}
+                >
                     <h2 className={`${utils.xl_heading}`}>Friend</h2>
                     <h2 className={`${utils.xl_heading}`}>
                         <span

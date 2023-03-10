@@ -19,13 +19,13 @@
     
     /* Defined in index.js imported with new@next/font */
     /*
-    --primary-font: Be Vietnam Pro;
+    --primary-font: Open Sans;
     --secondary-font: Noto Sans; 
     */
     
-    --primary-font-weight: 300;
+    --primary-font-weight: 400;
     --secondary-font-weight:  700;
-    --exception-font-weight:  400;
+    --exception-font-weight:  600;
 
     --primary-letter-spacing: 0.04em;
     --exception-letter-spacing: -0.04em;
@@ -33,7 +33,7 @@
     --xl-font-size: clamp(96px, 20vw, 148px);
     --lg-font-size: 64px;
     /* --md-font-size: 24px; */
-    --md-font-size: 40px;
+    --md-font-size: 30px;
 /*     --sm-font-size: 18px; */
     --sm-font-size: 18px;
 /*     --body-font-size: 12px; */
@@ -42,7 +42,7 @@
 /*     --desktop-link-size: 12px; */
     --desktop-link-size: 14px;
     /* --tag-font-size: 12px; */
-    --tag-font-size: 12px;
+    --tag-font-size: 10px;
     
     /* ----------------------SPACING------------------------- */
     --xxl-spacer: 8rem;     /* 128px */

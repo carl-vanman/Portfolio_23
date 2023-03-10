@@ -7,7 +7,13 @@
 .tag_text {
     font-family: var(--primary-font);
     font-weight: var(--primary-font-weight);
-    letter-spacing: 0.04em;
+    letter-spacing: var(--primary-letter-spacing);
+}
+
+.md_heading,
+.md_heading_light,
+.body_text {
+    margin-bottom: var(--xsm-spacer);
 }
 
 .body_text,
@@ -23,22 +29,27 @@
 
 .tag_text {
     font-size: var(--tag-font-size);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .xl_heading,
 .lg_heading,
+.xl_heading_light,
+.lg_heading_light {
+    font-family: var(--secondary-font);
+    letter-spacing: var(--primary-letter-spacing);
+}
+
 .md_heading,
 .sm_heading,
 .xl_heading_light,
 .lg_heading_light,
 .md_heading_light,
 .sm_heading_light {
-    font-family: var(--secondary-font);
-    letter-spacing: var(--primary-letter-spacing);
+    font-family: var(--primary-font);
 }
 
-.xl_heading,
-.lg_heading,
 .md_heading,
 .xl_heading_light,
 .lg_heading_light,
@@ -102,70 +113,9 @@
     color: var(--accent-color);
 }
 
-/*  */
-/* .body_text_dark,
-.body_text_light,
-.link_text_dark,
-.link_text_light {
-    font-family: var(--primary-font);
-    font-weight: var(--primary-font-weight);
-}
-.body_text_dark,
-.body_text_light { 
-    font-size: var(--body-font-size);
-}
 
-.link_text_dark,
-.link_text_light {
-    font-size: var(--link-font-size);
-}
+/* -----------SPACER----------- */
 
-.xl_heading_dark,
-.xl_heading_light,
-.lg_heading_dark,
-.lg_heading_light,
-.md_heading_dark,
-.md_heading_light,
-.sm_heading_dark,
-.sm_heading_light {
-    font-family: var(--secondary-font);
-    font-weight: var(--secondary-weight);
+.lg_spacer {
+    margin-bottom: var(--lg-spacer);
 }
-
-.xl_heading_dark,
-.xl_heading_light {
-    font-size: var(--xl-font-size);
-}
-
-.lg_heading_dark,
-.lg_heading_light {
-    font-size: var(--lg-font-size);
-}
-
-.md_heading_dark,
-.md_heading_light {
-    font-size: var(--md-font-size);
-}
-
-.sm_heading_dark,
-.sm_heading_light {
-    font-size: var(--sm-font-size);
-}
-
-.body_text_dark,
-.xl_heading_dark,
-.lg_heading_dark,
-.md_heading_dark,
-.sm_heading_dark,
-.link_text_dark {
-    color: var(--primary-color);
-}
-
-.body_text_light,
-.xl_heading_light,
-.lg_heading_light,
-.md_heading_light,
-.sm_heading_light,
-.link_text_light {
-    color: var(--secondary-color);
-} */

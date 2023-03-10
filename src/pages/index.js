@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Be_Vietnam_Pro } from "@next/font/google";
 import { Noto_Sans } from "@next/font/google";
+import { Open_Sans } from "@next/font/google";
 
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
@@ -11,9 +11,9 @@ import styles from "../styles/Home.module.css"
 import Sliced from '@/components/art/Sliced';
 import Projects from '@/components/projects/Projects';
 
-const vietnam = Be_Vietnam_Pro({
+const open_sans = Open_Sans({
     variable: "--primary-font",
-    weight: ["300"],
+    weight: ["400", "600", "700"],
     subsets:["latin"],
 });
 
@@ -35,7 +35,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main_layout} ${vietnam.variable} ${noto.variable}`}>
+            <main className={`${styles.main_layout} ${open_sans.variable} ${noto.variable}`}>
                 <Navigation />
                 <Introduction />
                 <Sliced />
