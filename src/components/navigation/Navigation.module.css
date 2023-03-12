@@ -385,3 +385,46 @@
         transition: color 0.3s ease-out;
     }
 }
+
+
+
+
+/* desktop option in media query
+.nav {
+        height: var(--btn-size);
+        mix-blend-mode: difference;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        --tw-text-opacity: 1;
+        --tw-bg-opacity: 1;
+        color: rgb(24 23 24/var(--tw-text-opacity));
+        background-color: rgb(250 250 250/var(--tw-bg-opacity));
+    }
+
+    .menu_btn {
+        display: none;
+    }
+
+    #menu_links {
+        background-color: transparent;
+
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: min-content;
+        padding: 0px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width: 699px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        transition: 0s;
+    }
+
+*/
