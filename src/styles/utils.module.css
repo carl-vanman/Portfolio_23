@@ -33,25 +33,25 @@
     letter-spacing: 0.1em;
 }
 
-.xl_heading,
-.lg_heading,
-.xl_heading_light,
-.lg_heading_light {
+.xxl_heading,
+.xxl_heading_light {
     font-family: var(--secondary-font);
     letter-spacing: var(--primary-letter-spacing);
 }
 
+.lg_heading,
 .md_heading,
 .sm_heading,
-.xl_heading_light,
 .lg_heading_light,
 .md_heading_light,
 .sm_heading_light {
     font-family: var(--primary-font);
 }
 
+.lg_heading,
 .md_heading,
-.xl_heading_light,
+.xxl_heading,
+.xxl_heading_light,
 .lg_heading_light,
 .md_heading_light {
     font-weight: var(--secondary-font-weight);
@@ -66,10 +66,10 @@
     letter-spacing: var(--primary-letter-spacing);
 }
 
-.xl_heading,
-.xl_heading_light {
-    font-size: var(--xl-font-size);
-    line-height: 70%;
+.xxl_heading,
+.xxl_heading_light {
+    font-size: var(--xxl-font-size);
+    line-height: 85%;
     letter-spacing: var(--exception-letter-spacing);
 }
 
@@ -91,7 +91,7 @@
 }
 
 .body_text,
-.xl_heading,
+.xxl_heading,
 .lg_heading,
 .md_heading,
 .sm_heading,
@@ -102,7 +102,7 @@
 /* transperant */
 .body_text_light,
 .link_text_light,
-.xl_heading_light,
+.xxl_heading_light,
 .lg_heading_light,
 .md_heading_light,
 .sm_heading_light {

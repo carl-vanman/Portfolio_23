@@ -1,0 +1,18 @@
+.bottom_banner {
+    position: relative;
+    left: 0px;
+    top: 0px;
+
+}
+.bottom_banner h3 {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    color: var(--accent-color);
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.dummy_spacer {
+    height: 125px;
+}

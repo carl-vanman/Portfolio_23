@@ -3,10 +3,10 @@
     --max-width: 1100px;
 
     /* -----------------------COLORS--------------------------- */
-    --primary-color-rgb: 250 250 250;
+    --primary-color-rgb: 24 23 24;
     --primary-color:rgb(var(--primary-color-rgb));
 
-    --secondary-color-rgb: 24 23 24;
+    --secondary-color-rgb: 250 250 250;
     --secondary-color: rgb(var(--secondary-color-rgb));
     
     --primary-color-light:  rgb(var(--primary-color-rgb) / 0.65);
@@ -30,10 +30,11 @@
     --primary-letter-spacing: 0.04em;
     --exception-letter-spacing: -0.04em;
 
-    --xl-font-size: clamp(96px, 20vw, 148px);
-    --lg-font-size: 64px;
+    --xxl-font-size: clamp(88px, 20vw, 148px);
+
+    --lg-font-size: clamp(30px, 10vw, 48px);
     /* --md-font-size: 24px; */
-    --md-font-size: 30px;
+    --md-font-size: clamp(18px, 5vw, 30px);
 /*     --sm-font-size: 18px; */
     --sm-font-size: 18px;
 /*     --body-font-size: 12px; */

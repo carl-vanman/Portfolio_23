@@ -4,42 +4,81 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: clamp(2rem, 10vw, 6rem);
 }
 
 .about_container {
     align-self: center;
-    width: clamp(280px, 40vw, 360px);
-
-    /* display: flex;
-    flex-direction: column; */
-
-   /*  gap: var(--xsm-spacer); */
+    width: clamp(300px, 40vw, 400px);
 }
 
+.marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+
+    width: clamp(280px, 40vw, 500px);
+}
+  
+.marquee_content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+
+    animation: scroll 15s linear infinite;
+}
+
+.marquee_content:last-child {
+    animation-name: scroll;
+}
+
+.marquee:hover .marquee_content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
 .about_container aside {
-    /* margin-top: var(--sm-spacer); */
+    margin-top: var(--md-spacer);
     text-align: right;
 }
 
 .top_title {
-    animation: top-title 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation: top-title 1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .bottom_title {
     align-self: flex-end;
     text-align: right;
-
-    animation: bottom-title 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.bottom_title h2:first-child{
+    padding-right: 10vw;
+    animation: bottom-title 1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.hyphen {
-    color: var(--accent-color);
+.bottom_title h2:last-child{
+    animation: bottom-title 1.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.text_outlined {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--secondary-color);
 }
 
 @keyframes top-title {
     0% {
-        transform: translate(-80px);
+        transform: translate(-100px);
         opacity: 0;
     }
     100% { 
@@ -49,17 +88,11 @@
 }
 @keyframes bottom-title {
     0% {
-        transform: translate(80px);
+        transform: translate(100px);
         opacity: 0;
     }
     100% { 
         transform: translate(0px, 0px);
         opacity: 1;
-    }
-}
-
-@media (min-width: 699px) {
-    .container {
-        margin-top: -64px;
     }
 }

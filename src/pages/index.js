@@ -10,10 +10,11 @@ import Introduction from "@/components/introduction/Introduction";
 import styles from "../styles/Home.module.css"
 import Sliced from '@/components/art/Sliced';
 import Projects from '@/components/projects/Projects';
+import Banner from '@/components/banner/Banner';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
-    weight: ["400", "600", "700"],
+    weight: ["500", "600", "700"],
     subsets:["latin"],
 });
 
@@ -38,6 +39,7 @@ export default function Home() {
             <main className={`${styles.main_layout} ${open_sans.variable} ${noto.variable}`}>
                 <Navigation />
                 <Introduction />
+                <Banner />
                 <Sliced />
                 <Projects />
             </main>
