@@ -76,11 +76,13 @@
 .lg_heading,
 .lg_heading_light {
     font-size: var(--lg-font-size);
+    font-weight: var(--exception-font-weight);
 }
 
 .md_heading,
 .md_heading_light {
     font-size: var(--md-font-size);
+    font-weight: var(--exception-font-weight);
 }
 
 .sm_heading,
