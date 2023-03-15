@@ -37,7 +37,7 @@ const Sliced = () => {
                 />
                 <div className={styles.lines_container}>
                     {divs.map((div) => (
-                        <div key={div} style={{height:`${div+scrollPosition*0.015}px`}} />
+                        <div key={div} style={{height:`${div+scrollPosition*0.013}px`}} />
                     ))}
                 </div>
             </div>

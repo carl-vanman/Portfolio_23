@@ -29,7 +29,7 @@ const IntroductionContent = ({ exitTranslateSlow, exitOpacity }) => {
                     Knowledge and Creativity
                 </h4>
                 <h4 className={`${utils.md_heading_light} ${styles.side_back}`}>
-                    to Develop
+                    to Develop{/* Formulate */}
                 </h4>
                 <h4 className={`${utils.md_heading_light} ${styles.side_top}`}>
                     Beautiful Solutions.
