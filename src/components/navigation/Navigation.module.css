@@ -1,4 +1,4 @@
-.nav {
+.wrapper {
     --margin-bottom: 5vh;
     --btn-size: 54px;
 }
@@ -217,11 +217,11 @@
     z-index: 1;
 }
 
-.nav .menu_links.right {
+.wrapper .menu_links.right {
     right: 0px;
 }
 
-.nav .menu_links.left {
+.wrapper .menu_links.left {
     left: 0px;
 }
 
@@ -306,7 +306,7 @@
 
 /* -----------------------DESKTOP-------------------------- */
 @media (min-width: 699px) {
-    .nav {
+    .wrapper {
         
         position: fixed;
         z-index: 9999;

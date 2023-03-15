@@ -19,7 +19,7 @@ const Navigation = () => {
     const closeMenu = () => setIsMenuOpen(false);
 
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.wrapper}>
             {(buttonPosition === "left" || isMenuOpen) && (
                 <MenuButton
                     isMenuOpen={isMenuOpen}
