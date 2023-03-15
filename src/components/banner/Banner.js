@@ -9,7 +9,7 @@ const Banner = () => {
     const [scrollPosition] = useScrollPosition();
 
     const exitScaleDuration = 0.2;
-    const exitScale = scrollPosition * exitScaleDuration * 2;
+    const exitScale = scrollPosition * exitScaleDuration * 2 * 0.7;
 
     const initOpacity = 4;
     const exitOpacityDuration = 0.0036;
@@ -21,7 +21,7 @@ const Banner = () => {
             <div 
                 className={`${styles.bottom_banner}`} 
                 style= {{
-                    transform: `scale(${exitScale}%)`,
+                    transform: `scale(${exitScale}%) translateY(${exitScale * 0.07}px)`,
                     opacity: `${exitOpacity}`,
                 }}
             >
