@@ -14,7 +14,7 @@ const Sliced = () => {
     const [scrollPosition] = useScrollPosition()
 
     return (
-        <Section style={{grid: "1/-1"}}>
+        <Section style={{padding: "0"}}>
             <div className={styles.art_container} style={{
                         transform: `translateY(${100-scrollPosition*0.1}px)`
                     }}>
@@ -27,7 +27,7 @@ const Sliced = () => {
                 />
                 <div className={styles.lines_container}>
                     {Lines.map((lineInitHeight) => (
-                        <div key={lineInitHeight} style={{height:`${lineInitHeight*2}px`}} />
+                        <div key={lineInitHeight} />
                     ))}
                 </div>
             </div>
