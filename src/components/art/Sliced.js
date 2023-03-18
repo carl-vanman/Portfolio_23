@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 import Image from "next/image";
 import Section from "../section/Section";
 
 import styles from "./Sliced.module.css";
 
-import eyes from "../../../public/images/art/eyesInColor2.png";
+import eyes from "../../../public/images/art/eyes.png";
 import useScrollPosition from "@/hooks/useScrollPosition";
 
 const Lines = [9, 7, 5, 3, 1, 0.5, 1.1, 3.1, 5.1, 7.1, 9.1];

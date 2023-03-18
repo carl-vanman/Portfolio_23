@@ -15,7 +15,6 @@ const Banner = () => {
     const exitOpacityDuration = 0.0036;
     const exitOpacity = initOpacity - scrollPosition * exitOpacityDuration;
 
-    console.log(exitScale)
     return (
         <Section style={{ gridColumn: "1/-1" }}>
             <div 

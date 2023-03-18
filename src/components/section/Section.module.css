@@ -2,5 +2,5 @@
     padding: var(--xxl-spacer) 0rem;
 }
 .container {
-    padding: clamp(var(--lg-spacer), 15vw, var(--xxl-spacer)) 0rem;
+    padding: clamp(var(--lg-spacer), 15vw, var(--xxl-spacer)) 2vw;
 }

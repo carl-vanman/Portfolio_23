@@ -11,6 +11,7 @@
     
     --primary-color-light:  rgb(var(--primary-color-rgb) / 0.65);
     --secondary-color-light: rgb(var(--secondary-color-rgb) / 0.65);
+    --secondary-color-transparent: rgb(var(--secondary-color-rgb) / 0.05);
     
     --accent-color: rgb(86 83 210);
     --accent-color: rgb(225, 93, 64);
@@ -55,7 +56,7 @@
     --sm-spacer: 0.5rem;    /* 8px */
     --xsm-spacer: 0.25rem;  /* 4px */
 
-    --lg-border-radius: 18px;
+    --border-radius: 8px;
 }
 
 * {

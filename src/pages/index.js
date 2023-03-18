@@ -14,7 +14,7 @@ import Banner from '@/components/banner/Banner';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
-    weight: ["500", "600", "700"],
+    weight: ["400", "600", "700"],
     subsets:["latin"],
 });
 

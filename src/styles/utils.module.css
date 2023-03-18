@@ -31,6 +31,7 @@
     font-size: var(--tag-font-size);
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    margin-bottom: var(--xsm-spacer);
 }
 
 .xxl_heading,
@@ -39,6 +40,7 @@
     letter-spacing: var(--primary-letter-spacing);
 }
 
+.xl_heading,
 .lg_heading,
 .md_heading,
 .sm_heading,
@@ -48,18 +50,22 @@
     font-family: var(--primary-font);
 }
 
+.xxl_heading,
+.xl_heading,
 .lg_heading,
 .md_heading,
-.xxl_heading,
 .xxl_heading_light,
+.xl_heading_light,
 .lg_heading_light,
 .md_heading_light {
     font-weight: var(--secondary-font-weight);
 }
 
+.xl_heading,
 .lg_heading,
 .md_heading,
 .sm_heading,
+.xl_headind_light
 .lg_heading_light,
 .md_heading_light,
 .sm_heading_light {
@@ -71,6 +77,11 @@
     font-size: var(--xxl-font-size);
     line-height: 85%;
     letter-spacing: var(--exception-letter-spacing);
+}
+
+.xl_heading,
+.xl_headind_light {
+    font-size: var(--xl-font-size);
 }
 
 .lg_heading,
@@ -94,6 +105,7 @@
 
 .body_text,
 .xxl_heading,
+.xl_heading,
 .lg_heading,
 .md_heading,
 .sm_heading,
@@ -105,6 +117,7 @@
 .body_text_light,
 .link_text_light,
 .xxl_heading_light,
+.xl_heading_light,
 .lg_heading_light,
 .md_heading_light,
 .sm_heading_light {
@@ -114,7 +127,6 @@
 .tag_text {
     color: var(--accent-color);
 }
-
 
 /* -----------SPACER----------- */
 
