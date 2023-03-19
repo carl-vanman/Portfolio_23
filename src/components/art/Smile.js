@@ -2,7 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 import Section from '../section/Section'
-import smile from "../../../public/images/art/smileBlackShadow.png";
+import smile from "../../../public/images/art/smileyRefined.png";
 import styles from "./Smile.module.css"
 import utils from "../../styles/utils.module.css";
 
