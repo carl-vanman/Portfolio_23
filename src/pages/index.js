@@ -12,6 +12,7 @@ import Sliced from '@/components/art/Sliced';
 import Projects from '@/components/projects/Projects';
 import Banner from '@/components/banner/Banner';
 import Smile from '@/components/art/Smile';
+import Experience from '@/components/Experience/Experience';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
@@ -44,6 +45,7 @@ export default function Home() {
                 <Sliced />
                 <Projects />
                 <Smile />
+                <Experience />
             </main>
         </>
     );

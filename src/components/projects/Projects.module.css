@@ -1,9 +1,8 @@
 .table {
-    margin-top: clamp(var(--lg-spacer), 8vw, var(--xl-spacer));
+    margin-top: var(--md-spacer)/* clamp(var(--lg-spacer)/* , 8vw, var(--xl-spacer)) */;
     display: flex;
     flex-direction: column;
     gap: var(--md-spacer);
-    padding: 0vw 4vw;
 }
 
 .project_card,

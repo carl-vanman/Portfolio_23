@@ -14,7 +14,7 @@ const projectList = [
         id: "1",
         heading: "Garrison",
         subHeading: "Utilizing Modern Technologies",
-        about: "Garrison.se was developed by me and small team. The website was build using Next.js, Contentful, and automatic deployments to Azure via Github Actions. The project showcases the team's expertise and efficient use of modern technologies.",
+        about: "Garrison.se was developed by me and small team. The website was built using Next.js, Contentful, and automatic deployments to Azure via Github Actions. The project showcases the team's expertise and efficient use of modern technologies.",
         stackItems: [
             {altText:"Nextjs", icon: nextjs}, 
             {altText:"ContentFul", icon: contentful},
@@ -46,6 +46,9 @@ const Projects = () => {
     return (
         <Section>
             <h2 className={`${utils.xl_heading}`}>Projects</h2>
+            <p className={`${utils.body_text}`}>
+                Below you find a selection of projects I have enjoyed building.
+            </p>
             <ProjectsTable projectList={projectList} />
         </Section>
     );

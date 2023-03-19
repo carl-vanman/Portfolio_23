@@ -14,7 +14,7 @@ const Sliced = () => {
     const [scrollPosition] = useScrollPosition()
 
     return (
-        <Section style={{padding: "0"}}>
+        <Section>
             <div className={styles.art_container} style={{
                         transform: `translateY(${100-scrollPosition*0.1}px)`
                     }}>

@@ -100,7 +100,6 @@
 .sm_heading_light {
     font-size: var(--sm-font-size);
     font-weight: var(--exception-font-weight);
-    text-transform: uppercase;
 }
 
 .body_text,
