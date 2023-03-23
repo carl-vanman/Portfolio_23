@@ -72,6 +72,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 
 button {

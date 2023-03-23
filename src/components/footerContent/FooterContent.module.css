@@ -1,0 +1,27 @@
+.socials {
+    display: flex;
+    gap: 2.5rem;
+
+    background-color: var(--secondary-color);
+    padding: var(--lg-spacer);
+    margin-top: clamp(var(--lg-spacer), 15vw, var(--xxl-spacer));
+
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    position: relative;
+    filter: saturate(var(--darker));
+    height: 32px;
+    width: 32px;
+}
+
+.github {
+    height: 35px;
+    width: 35px;
+}
+
+.social_image {
+    object-fit: contain;
+}

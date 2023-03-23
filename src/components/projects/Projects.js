@@ -44,7 +44,7 @@ const projectList = [
 
 const Projects = () => {
     return (
-        <Section>
+        <Section id={"projects"}>
             <h2 className={`${utils.xl_heading}`}>Projects</h2>
             <p className={`${utils.body_text}`}>
                 Below you find a selection of projects I have enjoyed building.

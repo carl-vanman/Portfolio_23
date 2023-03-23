@@ -40,7 +40,7 @@ const IntroductionContent = ({ exitTranslateSlow, exitOpacity }) => {
                 creativity and technology. I love blending my technical
                 knowledge and creative skills into my work.
             </p>
-            {/* <p className={`${utils.tag_text} ${styles.content_tag}`}>{"[ Introduction ]"}</p> */}
+            {<p className={`${utils.tag_text} ${styles.content_tag}`}>{"[ Good vibes ]"}</p>}
         </article>
     );
 };

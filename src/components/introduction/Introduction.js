@@ -23,10 +23,10 @@ const Introduction = () => {
 
 
     return (
-        <Section>
+        <Section id={"home"}>
             <div className={styles.wrapper}>
                 <IntroductionHeader exitTranslateSlow={exitTranslateSlow} exitOpacity={exitOpacity} />
-                    <IntroductionContent exitTranslateSlow={exitTranslateSlow} exitOpacity={exitOpacity} />
+                <IntroductionContent exitTranslateSlow={exitTranslateSlow} exitOpacity={exitOpacity} />
                 <IntroductionHeaderBottom exitTranslateSlow={exitTranslateSlow} exitTranslateFast={exitTranslateFast} exitOpacity={exitOpacity} />
             </div>
         </Section>

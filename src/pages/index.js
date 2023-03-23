@@ -13,6 +13,8 @@ import Projects from '@/components/projects/Projects';
 import Banner from '@/components/banner/Banner';
 import Smile from '@/components/art/Smile';
 import Experience from '@/components/Experience/Experience';
+import ContactForm from '@/components/contactForm/ContactForm';
+import FooterContent from '@/components/footerContent/FooterContent';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
@@ -38,15 +40,21 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main_layout} ${open_sans.variable} ${noto.variable}`}>
+            <header className={`${open_sans.variable} ${noto.variable}`}>
                 <Navigation />
+            </header>
+            <main className={`${styles.main_layout} ${open_sans.variable} ${noto.variable}`}>
                 <Introduction />
                 <Banner />
                 <Sliced />
                 <Projects />
                 <Smile />
                 <Experience />
+                <ContactForm />
             </main>
+            <footer className={`${open_sans.variable} ${noto.variable}`}>
+                <FooterContent />
+            </footer>
         </>
     );
 }

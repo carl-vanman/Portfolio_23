@@ -9,10 +9,10 @@ import githubLight from "../../../public/images/icons/githubLight.png";
 import linkedinLight from "../../../public/images/icons/linkedinLight.png";
 
 const links = [
-    { label: "Home", href: "#" },
-    { label: "Projects", href: "#" },
-    { label: "Experience", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Home", href: "#home" },
+    { label: "Projects", href: "#projects" },
+    { label: "Experience", href: "#experience" },
+    { label: "Contact", href: "#contact" },
 ];
 const socialLinks = [
     { altText: "Linkedin", href: "#", icon: linkedinLight },
@@ -53,7 +53,7 @@ const NavigationLinks = ({ isMenuOpen, position, closeMenu }) => {
                         href={social.href}
                         onClick={closeMenu}
                     >
-                        <div className={styles.social}>
+                        <div className={`${styles.social} ${styles[social.altText.toLowerCase()]}`}>
                             <Image
                                 className={styles.social_image}
                                 alt={social.altText}

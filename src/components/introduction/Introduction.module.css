@@ -8,7 +8,9 @@
 }
 
 .top_header {
-    animation: top-header 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation: 
+        top-header 0.5s cubic-bezier(0.65, 0.05, 0.36, 1),
+        appear 0.5s linear forwards;
 }
 
 .bottom_header {
@@ -23,71 +25,78 @@
 
 .bottom_header h2:first-child {
     padding-right: 10vw;
-    animation: bottom-header 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation: 
+        bottom-header 0.5s cubic-bezier(0.65, 0.05, 0.36, 1),
+        appear 0.5s linear forwards;
 }
 
 .bottom_header h2:last-child {
-    animation: bottom-header 1.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation: bottom-header 0.7s cubic-bezier(0.65, 0.05, 0.36, 1),
+    appear 0.5s linear forwards;
 }
 
-@keyframes top-header {
+/* @keyframes top-header {
     0% {
-        transform: translate(-100px);
-        opacity: 0;
+        transform: translate(-30px);
     }
     100% {
         transform: translate(0px, 0px);
-        opacity: 1;
     }
 }
 @keyframes bottom-header {
     0% {
-        transform: translate(100px);
-        opacity: 0;
+        transform: translate(30px);
     }
     100% {
         transform: translate(0px, 0px);
-        opacity: 1;
     }
 }
+@keyframes appear {
+    from {opacity: 0.4;}
+} */
 
 .content_container {
     align-self: center;
     width: clamp(300px, 40vw, 400px);
 }
 
-/* .content_tag {
+.content_tag {
     margin-top: var(--md-spacer);
     text-align: right;
-} */
+}
 
 .content_rotatingTextCarousel {
     --height: 40px;
     position: relative;
     width: 500px;
-    /* height: var(--height); */
 
     transform-style: preserve-3d;
-    animation: rotate 10s linear 2s infinite;
+    animation: rotate 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 }
 
+.content_rotatingTextCarousel h4 {
+    width: min-content;
+}
+
+.content_rotatingTextCarousel h4:nth-child(2){color: var(--accent-color);}
+
 @keyframes rotate {
-    0% {
+    16.67% {
         transform: rotateX(0deg);
     }
-    8.33%,
-    25% {
+    25%,
+    41.67%
+     {
         transform: rotateX(90deg);
     }
-    33.33%,
-    50% {
+    50%,
+    66.67% {
         transform: rotateX(180deg);
     }
-    58.33%,
-    75% {
+    75%,
+    91.67% {
         transform: rotateX(270deg);
     }
-    83.33%,
     100% {
         transform: rotateX(360deg);
     }
@@ -101,7 +110,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100%; */
     backface-visibility: hidden;
     white-space: nowrap;
 }
