@@ -50,7 +50,7 @@
     width: 16px;
     height: 2px;
 
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     position: absolute;
 }
 
@@ -246,8 +246,12 @@
 
 .menu_link_divider {
     height: 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     width: 100%;
+}
+
+#menu_links .menu_link {
+    color: var(--primary-color);
 }
 
 .socials {
@@ -382,6 +386,11 @@
     }
 
     /* ------------------------HOVER EFFECT--------------------------- */
+
+    #menu_links .menu_link {
+        color: var(--secondary-color);
+    }
+
     #menu_links {
         pointer-events: none;
     }

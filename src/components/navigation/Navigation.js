@@ -19,27 +19,29 @@ const Navigation = () => {
     const closeMenu = () => setIsMenuOpen(false);
 
     return (
-        <nav className={styles.wrapper}>
-            {(buttonPosition === "left" || isMenuOpen) && (
-                <MenuButton
+        <>
+            <nav className={styles.wrapper}>
+                {(buttonPosition === "left" || isMenuOpen) && (
+                    <MenuButton
+                        isMenuOpen={isMenuOpen}
+                        position={"left"}
+                        toggleMenu={toggleMenu}
+                    />
+                )}
+                {(buttonPosition === "right" || isMenuOpen) && (
+                    <MenuButton
+                        isMenuOpen={isMenuOpen}
+                        position={"right"}
+                        toggleMenu={toggleMenu}
+                    />
+                )}
+                <NavigationLinks
                     isMenuOpen={isMenuOpen}
-                    position={"left"}
-                    toggleMenu={toggleMenu}
+                    position={buttonPosition}
+                    closeMenu={closeMenu}
                 />
-            )}
-            {(buttonPosition === "right" || isMenuOpen) && (
-                <MenuButton
-                    isMenuOpen={isMenuOpen}
-                    position={"right"}
-                    toggleMenu={toggleMenu}
-                />
-            )}
-            <NavigationLinks
-                isMenuOpen={isMenuOpen}
-                position={buttonPosition}
-                closeMenu={closeMenu}
-            />
-        </nav>
+            </nav>
+        </>
     );
 };
 

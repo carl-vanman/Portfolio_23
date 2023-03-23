@@ -58,6 +58,9 @@
 .content_container {
     align-self: center;
     width: clamp(300px, 40vw, 400px);
+
+    /* with body_text set to 16px instead of 14
+    width: clamp(300px, 40vw, 360px); */
 }
 
 .content_tag {
@@ -78,7 +81,9 @@
     width: min-content;
 }
 
-.content_rotatingTextCarousel h4:nth-child(2){color: var(--accent-color);}
+.content_rotatingTextCarousel h4:nth-child(2) {
+    color: var(--accent-color);
+}
 
 @keyframes rotate {
     16.67% {

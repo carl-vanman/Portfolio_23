@@ -3,6 +3,8 @@ import React from "react";
 import utils from "../../styles/utils.module.css";
 import styles from "./Experience.module.css";
 
+import { useInView } from 'react-intersection-observer';
+
 const ExperienceSecondTable = ({ data }) => {
     const {
         workExperiences,
@@ -11,8 +13,13 @@ const ExperienceSecondTable = ({ data }) => {
         onGoingCourses,
         aspirations,
     } = data;
+
+    const { ref, inView } = useInView({
+        threshold: 0.4
+      });
+
     return (
-        <div className={styles.secondTable_wrapper}>
+        <div ref={ref} className={`${styles.secondTable_wrapper} ${!inView ? styles.notInView : ""}`}>
             <div className={`${styles.column} ${styles.firstColumn}`}>
                 <div className={`${styles.additionalRow}`}>
                     <h3 className={`${utils.tag_text}`}>Work</h3>

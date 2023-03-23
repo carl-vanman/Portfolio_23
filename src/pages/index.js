@@ -15,6 +15,7 @@ import Smile from '@/components/art/Smile';
 import Experience from '@/components/Experience/Experience';
 import ContactForm from '@/components/contactForm/ContactForm';
 import FooterContent from '@/components/footerContent/FooterContent';
+import ScrollProgressBar from '@/components/scrollProgressBar/scrollProgressBar';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
@@ -32,7 +33,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>TrAShy</title>
+                <title>{"(:"}</title>
                 <meta name="description" content="Portfolio site" />
                 <meta
                     name="viewport"
@@ -41,6 +42,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className={`${open_sans.variable} ${noto.variable}`}>
+                <ScrollProgressBar />
                 <Navigation />
             </header>
             <main className={`${styles.main_layout} ${open_sans.variable} ${noto.variable}`}>

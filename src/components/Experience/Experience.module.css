@@ -8,6 +8,13 @@
     margin-top: var(--md-spacer);
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.firstTable_wrapper.notInView,
+.secondTable_wrapper.notInView {
+    opacity: 0.4;
 }
 
 .noMarginBottom {

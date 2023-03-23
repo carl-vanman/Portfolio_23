@@ -42,9 +42,11 @@
     --sm-font-size: 18px;
 
     --body-font-size: 14px;
+    /* maybe change to 16px on desktop and 14px on mobile? */
 
     --link-font-size: 24px;
     --desktop-link-size: 14px;
+    /* --desktop-link-size: 16px; */
     
     --tag-font-size: 10px;
     

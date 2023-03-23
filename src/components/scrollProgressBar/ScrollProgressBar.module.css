@@ -1,0 +1,9 @@
+@media (min-width: 699px) {
+    .progressScrollBar {
+        position: fixed;
+        height: 5px;
+        background-color: var(--accent-color);
+        width: 0%;
+        z-index: 999999999;
+    }
+}

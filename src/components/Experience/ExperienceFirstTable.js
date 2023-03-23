@@ -3,6 +3,8 @@ import React from "react";
 import utils from "../../styles/utils.module.css";
 import styles from "./Experience.module.css";
 
+import { useInView } from 'react-intersection-observer';
+
 const ExperienceFirstTable = ({ data }) => {
     const {
         langueages,
@@ -12,8 +14,13 @@ const ExperienceFirstTable = ({ data }) => {
         cms,
         designTools,
     } = data;
+
+    const { ref, inView } = useInView({
+        threshold: 0.4
+      });
+
     return (
-        <div className={styles.firstTable_wrapper}>
+        <div ref={ref} className={`${styles.firstTable_wrapper} ${!inView ? styles.notInView : " "}`}>
             <div className={`${styles.column} ${styles.firstColumn}`}>
                 <div className={`${styles.additionalRow}`}>
                     <h3 className={`${utils.tag_text}`}>
