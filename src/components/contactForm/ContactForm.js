@@ -9,7 +9,7 @@ const ContactForm = () => {
             <div className={styles.wrapper}>
                 <h2 className={`${utils.xl_heading}`}>Contact</h2>
                 <p className={utils.body_text}>
-                    If you'd like to get in touch with me, please feel free to
+                    If you&apos;d like to get in touch with me, please feel free to
                     use the form below. Have a awesome day!
                 </p>
                 <form
