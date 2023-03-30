@@ -48,8 +48,6 @@ const ContactForm = () => {
                     >
                         Send
                     </button>
-                    {/* Possibility to redirect user after submit with line below */}
-                    {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                 </form>
             </div>
         </Section>
