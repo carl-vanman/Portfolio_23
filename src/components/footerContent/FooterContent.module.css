@@ -25,3 +25,12 @@
 .social_image {
     object-fit: contain;
 }
+
+.ps {
+    margin: 0px;
+    background-color: var(--secondary-color);
+    padding-bottom: var(--lg-spacer);
+    color: var(--primary-color);
+
+    text-align: center;
+}

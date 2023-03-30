@@ -31,7 +31,7 @@ const TableItem = ({ project }) => {
 
     const linkList = links.map( link => (
         <li key={link.url}>
-            <a className={styles.link} href={link.url}>{link.url}</a>
+            <a className={styles.link} href={link.url}>{link.text}</a>
         </li>
     ))
 

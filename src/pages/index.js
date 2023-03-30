@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>{"(:"}</title>
+                <title>CARL VÄNMAN</title>
                 <meta name="description" content="Portfolio site" />
                 <meta
                     name="viewport"

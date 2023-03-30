@@ -333,14 +333,12 @@
     }
 
     #menu_links {
-        
         position: relative;
         top: 0px;
-        width: 100%;
         height: min-content;
-        padding: 0px;
-        
+        width: 100%;
         max-width: 699px;
+        padding: 0px;    
         margin-left: 50%;
         transform: translateX(-50%);
         

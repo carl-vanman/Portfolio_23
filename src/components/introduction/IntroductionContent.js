@@ -36,7 +36,7 @@ const IntroductionContent = ({ exitTranslateSlow, exitOpacity }) => {
                 </h4>
             </div>
             <p className={`${utils.body_text}`}>
-                My name is Carl, a humble and kind person with a passion for
+                My name is Carl Vänman, a humble and kind person with a passion for
                 creativity and technology. I love blending my technical
                 knowledge and creative skills into my work.
             </p>

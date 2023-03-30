@@ -57,10 +57,10 @@
 
 .content_container {
     align-self: center;
-    width: clamp(300px, 40vw, 400px);
+   /*  width: clamp(300px, 40vw, 400px); */
 
-    /* with body_text set to 16px instead of 14
-    width: clamp(300px, 40vw, 360px); */
+    /* with body_text set to 16px instead of 14*/
+    width: clamp(300px, 40vw, 440px);
 }
 
 .content_tag {

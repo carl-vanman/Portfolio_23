@@ -2,12 +2,16 @@ import React from "react";
 import Section from "../section/Section";
 
 import ProjectsTable from "./ProjectsTable";
+import styles from "./Projects.module.css"
 import utils from "../../styles/utils.module.css";
 
 import nextjs from "../../../public/images/icons/next.png";
 import contentful from "../../../public/images/icons/contentful.png";
 import githubActions from "../../../public/images/icons/githubActions.png";
 import azure from "../../../public/images/icons/azure.png";
+import react from "../../../public/images/icons/react.png";
+import expo from "../../../public/images/icons/expo.png";
+import spotify from "../../../public/images/icons/spotify.png";
 
 const projectList = [
     {
@@ -21,24 +25,24 @@ const projectList = [
             {altText:"Github Actions", icon: githubActions},
             {altText:"Azure", icon: azure}
         ],
-        links: [{url:"www.garrison.se"}],
+        links: [{text:"www.garrison.se", url:"https://www.garrison.se"} ],
     },
     {
         id: "2",
-        heading: "Project Title2",
-        subHeading: "Short Sub Heading",
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lorem eu ante dignissim porta vel sed turpis. Proin interdum dolor e felis volutpat, eget pharetra ipsum aliquam. Mauris eu metus in mauris dignissim sodales. Fusce vel elit a.",
-        stackItems: [],
-        links: [],
+        heading: "Catch 'Em All",
+        subHeading: "Let's Build an Mobile App",
+        about: "As part of our examination project at IT-Högskolan last summer, my friend Christos Eteoglou and I developed a Pokédex app. Built with React Native and Expo, our app allows users to easily search and view information about various Pokémon species. Although it's not yet ready for deployment, we're happy with the result.",
+        stackItems: [{altText:"React Native", icon: react}, {altText:"Expo", icon: expo}],
+        links: [{text:"www.github.com/pokedex", url:"https://github.com/christoseteoglou/pokedex"}, {text:"www.christoseteoglou.com", url:"https://www.christoseteoglou.com/"}],
     },
 
     {
         id: "3",
-        heading: "Project Title3",
-        subHeading: "Short Sub Heading",
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lorem eu ante dignissim porta vel sed turpis. Proin interdum dolor e felis volutpat, eget pharetra ipsum aliquam. Mauris eu metus in mauris dignissim sodales. Fusce vel elit a.",
-        stackItems: [],
-        links: [],
+        heading: "The Old Way",
+        subHeading: "React Class Component",
+        about: "During a Codecademy course, I built a website using the old way of Class Components. The website allows users to search the Spotify library, create a custom playlist, and save it to their Spotify account. My goal was to explore and learn more about how React was written before all major changes to the library.",
+        stackItems: [{altText:"React", icon: react}, {altText:"Spotify API", icon: spotify}],
+        links: [{text:"www.github.com/jammming", url:"https://github.com/carl-vanman/Jammming"}],
     },
 ];
 
@@ -50,18 +54,10 @@ const Projects = () => {
                 Below you find a selection of projects I have enjoyed building.
             </p>
             <ProjectsTable projectList={projectList} />
+            
+            {/* <button className={`${utils.body_text} ${styles.load_more_button}`}>Load More</button> */}
         </Section>
     );
 };
 
 export default Projects;
-
-{/* {scrollPosition > 1300 && (
-    <style jsx global>{`
-        :root {
-            --primary-color-rgb: 250 250 250;
-            --secondary-color-rgb: 24 23 24;
-            transition: background-color 0.3s ease-out;
-        }
-    `}</style>
-)} */}

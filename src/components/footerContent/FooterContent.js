@@ -2,6 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
+import utils from "../../styles/utils.module.css"
 import styles from "./FooterContent.module.css";
 
 import githubLight from "../../../public/images/icons/githubLight.png";
@@ -14,23 +15,28 @@ const socialLinks = [
 
 const FooterContent = () => {
     return (
-        <ul className={styles.socials}>
-            {socialLinks.map((social) => (
-                <li key={social.altText}>
-                    <a href={social.href}>
-                        <div className={`${styles.social} ${styles[social.altText.toLowerCase()]}`}>
-                            <Image
-                                className={styles.social_image}
-                                alt={social.altText}
-                                src={social.icon}
-                                fill
-                                sizes="100%"
-                            />
-                        </div>
-                    </a>
-                </li>
-            ))}
-        </ul>
+        <>
+            <ul className={styles.socials}>
+                {socialLinks.map((social) => (
+                    <li key={social.altText}>
+                        <a href={social.href}>
+                            <div className={`${styles.social} ${styles[social.altText.toLowerCase()]}`}>
+                                <Image
+                                    className={styles.social_image}
+                                    alt={social.altText}
+                                    src={social.icon}
+                                    fill
+                                    sizes="100%"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                ))}
+            </ul>
+            <p className={`${utils.tag_text} ${styles.ps}`}>
+                Design and Developed by Me
+            </p>
+        </>
     );
 };
 

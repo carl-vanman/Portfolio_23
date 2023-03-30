@@ -15,7 +15,7 @@ const ContactForm = () => {
                 <form
                     className={styles.container}
                     target="_blank"
-                    action="https://formsubmit.co/your@email.com"
+                    action="https://formsubmit.co/vanman.carl@gmail.com"
                     method="POST"
                 >
                     <input
@@ -49,7 +49,7 @@ const ContactForm = () => {
                         Send
                     </button>
                     {/* Possibility to redirect user after submit with line below */}
-                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input>
+                    {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                 </form>
             </div>
         </Section>
