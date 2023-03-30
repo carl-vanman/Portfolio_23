@@ -15,7 +15,7 @@ import Smile from '@/components/art/Smile';
 import Experience from '@/components/Experience/Experience';
 import ContactForm from '@/components/contactForm/ContactForm';
 import FooterContent from '@/components/footerContent/FooterContent';
-import ScrollProgressBar from '@/components/scrollProgressBar/scrollProgressBar';
+import ScrollProgressBar from '@/components/scrollProgressBar/ScrollProgressBar';
 
 const open_sans = Open_Sans({
     variable: "--primary-font",
