@@ -14,7 +14,7 @@ const ContactForm = () => {
                 </p>
                 <form
                     className={styles.container}
-                    target="_blank"
+                    target="_self"
                     action="https://formsubmit.co/vanman.carl@gmail.com"
                     method="POST"
                 >
@@ -48,6 +48,7 @@ const ContactForm = () => {
                     >
                         Send
                     </button>
+                    <input type="hidden" name="_next" value="https://www.carlvanman.com#contact" />
                 </form>
             </div>
         </Section>

@@ -9,8 +9,8 @@ import githubLight from "../../../public/images/icons/githubLight.png";
 import linkedinLight from "../../../public/images/icons/linkedinLight.png";
 
 const socialLinks = [
-    { altText: "Linkedin", href: "#", icon: linkedinLight },
-    { altText: "Github", href: "#", icon: githubLight },
+    { altText: "Linkedin", href: "https://www.linkedin.com/in/carl-vanman", icon: linkedinLight },
+    { altText: "Github", href: "https://www.github.com/carl-vanman", icon: githubLight },
 ];
 
 const FooterContent = () => {
