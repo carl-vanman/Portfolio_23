@@ -70,10 +70,10 @@ const courses = ["Python 3", "JavaScript", "Asynchronous JavaScript", "Vue.js"];
 const onGoingCourses = ["Data Structures and Algorithms "];
 const aspirations = [
     "Expand my knowledge and experience in Javascript and Python.",
-    "Study math, data structures, algorithms, and design principles to improve my problem-solving skills.",
+    "Study math, data structures, algorithms and design principles.",
     "Create interesting and innovative UI designs.",
-    "Explore WebGL and Creative Coding",
-    "Learn Japanese.",
+    "Explore Three.js",
+    "Learn Japanese",
 ];
 
 const Experience = () => {
