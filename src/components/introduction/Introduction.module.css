@@ -35,7 +35,7 @@
     appear 0.5s linear forwards;
 }
 
-/* @keyframes top-header {
+@keyframes top-header {
     0% {
         transform: translate(-30px);
     }
@@ -53,13 +53,10 @@
 }
 @keyframes appear {
     from {opacity: 0.4;}
-} */
+}
 
 .content_container {
     align-self: center;
-   /*  width: clamp(300px, 40vw, 400px); */
-
-    /* with body_text set to 16px instead of 14*/
     width: clamp(300px, 40vw, 440px);
 }
 
@@ -72,7 +69,7 @@
     --height: 40px;
     position: relative;
     width: 500px;
-
+    height: 100%;
     transform-style: preserve-3d;
     animation: rotate 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 }
@@ -143,8 +140,18 @@
     background-color: var(--primary-color);
 }
 
+.content_container .pause_animation {
+    animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion) {
     .content_rotatingTextCarousel {
         animation-play-state: paused;
+    }
+}
+
+@media (max-width: 699px) {
+    .content_rotatingTextCarousel {
+        --height: 30px;
     }
 }

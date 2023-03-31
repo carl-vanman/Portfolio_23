@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Introduction.module.css";
 import utils from "../../styles/utils.module.css";
 
-const IntroductionContent = ({ exitTranslateSlow, exitOpacity }) => {
+const IntroductionContent = ({ exitTranslateSlow, exitOpacity, inView }) => {
     return (
         <article
             className={`${styles.content_container}`}
@@ -13,7 +13,7 @@ const IntroductionContent = ({ exitTranslateSlow, exitOpacity }) => {
             }}
         >
             <h3 className={`${utils.lg_heading}`}>Innovative</h3>
-            <div className={styles.content_rotatingTextCarousel}>
+            <div className={`${styles.content_rotatingTextCarousel} ${(!inView ? styles.pause_animation: "")}`}>
                 <h4 className={`${utils.md_heading_light} ${styles.dummy}`}>
                     Dummy
                 </h4>

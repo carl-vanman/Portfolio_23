@@ -57,3 +57,13 @@
         transform: translateY(1.5px) skew(0.004turn, 1deg) scale(97%);
     }
 }
+
+.text h2.pause_animation {
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion) {
+    .text > * {
+        animation-play-state: paused;
+    }
+}
