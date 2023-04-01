@@ -5,7 +5,7 @@ import Section from "../section/Section";
 
 import styles from "./Sliced.module.css";
 
-import eyes from "../../../public/images/art/agedEyesGroup.png";
+import eyes from "../../../public/images/art/agedEyesFrame.png";
 
 const Lines = [9, 7, 5, 3, 1, 0.5, 1.1, 3.1, 5.1, 7.1, 9.1];
 
