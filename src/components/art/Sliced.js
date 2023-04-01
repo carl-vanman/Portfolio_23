@@ -5,7 +5,7 @@ import Section from "../section/Section";
 
 import styles from "./Sliced.module.css";
 
-import eyes from "../../../public/images/art/eyes.png";
+import eyes from "../../../public/images/art/agedEyesGroup.png";
 
 const Lines = [9, 7, 5, 3, 1, 0.5, 1.1, 3.1, 5.1, 7.1, 9.1];
 
@@ -21,11 +21,11 @@ const Sliced = () => {
                     fill
                     sizes="100%"
                 />
-                <div className={styles.lines_container}>
+                {/* <div className={styles.lines_container}>
                     {Lines.map((lineInitHeight) => (
                         <div key={lineInitHeight} />
                     ))}
-                </div>
+                </div> */}
             </div>
         </Section>
     );
