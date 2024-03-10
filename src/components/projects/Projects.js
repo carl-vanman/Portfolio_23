@@ -23,7 +23,7 @@ const projectList = [
     heading: 'Confirmation Journey',
     subHeading: 'Revolutionizing Tradition',
     about:
-      'We digitalized the confirmation journey for our client, crafting a full-stack solution. Utilizing Next.js 13, Tailwind for styling, along with Firebase for a robust backend, we innovated the traditional confirmation process. Implementing multi-level role-based access control, cookie-based session management, and deploying via Vercel, we delivered an administration and confirmands web app. This marks a milestone in digital engagement for congregations.',
+      'We digitalized the confirmation journey for our client, crafting a full-stack solution. Utilizing Next.js 13, Tailwind for styling, along with Firebase for a robust backend, we innovated the traditional confirmation process. Implementing multi-level role-based access control, cookie-based session management, and deploying via Vercel, we delivered an administration and confirmands web app.',
     stackItems: [
       { altText: 'Nextjs', icon: nextjs },
       { altText: 'Tailwind', icon: tailwind },
@@ -34,7 +34,7 @@ const projectList = [
     links: [
       {
         text: 'www.konfaappen.vercel.app',
-        url: 'https://www.konfaappen.vercel.app',
+        url: 'https://konfaappen.vercel.app',
       },
     ],
   },
